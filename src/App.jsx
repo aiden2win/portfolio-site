@@ -30,7 +30,7 @@ function App() {
             <a href="#strengths">{t.nav.strengths}</a>
             <a href="#contact">{t.nav.contact}</a>
             <button className="lang-toggle" onClick={toggleLang} aria-label="Toggle language">
-              {lang === 'ko' ? 'EN' : 'KO'}
+              {t.langLabel}
             </button>
           </div>
         </nav>
