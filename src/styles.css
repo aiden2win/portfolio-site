@@ -51,9 +51,28 @@ a {
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 16px;
   color: #42556a;
   font-size: 0.95rem;
+}
+
+.lang-toggle {
+  background: #23435f;
+  color: #f9fbff;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.lang-toggle:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(35, 67, 95, 0.22);
 }
 
 .hero-content {
