@@ -55,6 +55,16 @@ function App() {
           <div className="section-head reveal reveal-1">
             <h2>{t.projects.title}</h2>
             <p>{t.projects.desc}</p>
+            <p className="section-head-suffix">{t.projects.descSuffix}</p>
+          </div>
+          <div className="flow-steps reveal reveal-2">
+            {t.flow.map((item, index) => (
+              <div key={item.step} className="flow-step">
+                <span className="flow-step-number">{item.step}</span>
+                <span className="flow-step-label">{item.label}</span>
+                {index < t.flow.length - 1 && <span className="flow-arrow" aria-hidden="true">→</span>}
+              </div>
+            ))}
           </div>
           <div className="featured-grid">
             {t.featuredProjects.map((project, index) => (
@@ -82,6 +92,7 @@ function App() {
               </article>
             ))}
           </div>
+          <p className="suite-footer reveal reveal-1">{t.suiteFooter}</p>
         </section>
 
         <section id="side-projects" className="section">

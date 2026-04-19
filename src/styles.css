@@ -146,6 +146,64 @@ h2 {
   margin-top: 0;
 }
 
+.section-head-suffix {
+  color: #3c6e9a;
+  font-weight: 600;
+  margin-top: -4px;
+}
+
+.flow-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 24px;
+  padding: 18px 24px;
+  background: linear-gradient(140deg, #ffffff 0%, #f0f5fc 100%);
+  border: 1px solid #d9e3ef;
+  border-radius: 14px;
+}
+
+.flow-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.flow-step-number {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: #23435f;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.flow-step-label {
+  font-weight: 600;
+  color: #25384b;
+  font-size: 0.95rem;
+}
+
+.flow-arrow {
+  margin: 0 14px;
+  font-size: 1.2rem;
+  color: #3c6e9a;
+  font-weight: 700;
+}
+
+.suite-footer {
+  margin-top: 20px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #d9e3ef;
+  border-radius: 12px;
+  color: #43586d;
+  font-size: 0.95rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
 .featured-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -297,6 +355,17 @@ h2 {
   .project-grid,
   .strength-grid {
     grid-template-columns: 1fr;
+  }
+
+  .flow-steps {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+  }
+
+  .flow-arrow {
+    transform: rotate(90deg);
+    margin: 0;
   }
 }
 
