@@ -22,7 +22,7 @@ function App() {
     <div className="site">
       <header className="hero section">
         <nav className="top-nav">
-          <span className="brand">Aiden Portfolio</span>
+          <span className="brand">Aiden's Portfolio</span>
           <div className="nav-links">
             <a href="#about">{t.nav.about}</a>
             <a href="#projects">{t.nav.projects}</a>

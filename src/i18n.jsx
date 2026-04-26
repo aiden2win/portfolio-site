@@ -12,9 +12,9 @@ const translations = {
     },
     hero: {
       eyebrow: '전략 기획 & 비즈니스 개발',
-      heading: 'AI로 전략 도구를 직접 만드는 기획자, Aiden',
+      heading: 'AI로 전략 협업 툴을 직접 만드는 기획자, Aiden',
       copy: '시장 분석부터 사업성 평가, 전략 실행 관리까지 — AI를 활용해 의사결정에 필요한 도구를 직접 설계하고 만듭니다. 복잡한 판단을 데이터로 풀어내는 실용적인 제품을 지향합니다.',
-      cta: '전략 프로젝트 보기',
+      cta: '프로젝트 보기',
     },
     about: {
       title: '소개',
@@ -132,9 +132,9 @@ const translations = {
     },
     hero: {
       eyebrow: 'Strategy & Business Development',
-      heading: 'Hi, I\'m Aiden — I build AI-powered tools for strategic decision-making',
+      heading: 'Hi, I\'m Aiden — I build AI-powered strategic collaboration tools',
       copy: 'Market analysis, business evaluation, strategy execution tracking — I design and ship AI-driven decision support tools that help teams plan smarter and move faster.',
-      cta: 'See My Projects',
+      cta: 'View Projects',
     },
     about: {
       title: 'About',
