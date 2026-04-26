@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useCallback } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect } from 'react';
 
 const translations = {
   ko: {
@@ -253,17 +253,22 @@ export function LangProvider({ children }) {
     return 'ko';
   });
 
-  const toggleLang = useCallback(() => {
-    setLang((prev) => {
-      const next = prev === 'ko' ? 'en' : 'ko';
-      localStorage.setItem('portfolio-lang', next);
-      document.documentElement.lang = next;
-      return next;
-    });
+  const setLanguage = useCallback((next) => {
+    setLang(next);
+    localStorage.setItem('portfolio-lang', next);
+    document.documentElement.lang = next;
   }, []);
 
+  const toggleLang = useCallback(() => {
+    setLanguage(lang === 'ko' ? 'en' : 'ko');
+  }, [lang, setLanguage]);
+
+  useEffect(() => {
+    document.documentElement.lang = lang;
+  }, [lang]);
+
   return (
-    <LangContext.Provider value={{ lang, t: translations[lang], toggleLang }}>
+    <LangContext.Provider value={{ lang, t: translations[lang], toggleLang, setLanguage }}>
       {children}
     </LangContext.Provider>
   );

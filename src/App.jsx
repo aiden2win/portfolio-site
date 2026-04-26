@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { useLang } from './i18n';
 
 const projectLinks = [
@@ -16,7 +17,12 @@ const projectLinks = [
 ];
 
 function App() {
-  const { lang, t, toggleLang } = useLang();
+  const { lang, t, setLanguage } = useLang();
+  const [isLangMenuOpen, setIsLangMenuOpen] = useState(false);
+  const languageOptions = [
+    { code: 'ko', label: '한국어' },
+    { code: 'en', label: 'English' },
+  ];
 
   return (
     <div className="site">
@@ -29,9 +35,34 @@ function App() {
             <a href="#side-projects">{t.nav.sideProjects}</a>
             <a href="#strengths">{t.nav.strengths}</a>
             <a href="#contact">{t.nav.contact}</a>
-            <button className="lang-toggle" onClick={toggleLang} aria-label="Toggle language">
-              {t.langLabel}
-            </button>
+            <div className="lang-menu">
+              <button
+                className="lang-menu-trigger"
+                onClick={() => setIsLangMenuOpen((prev) => !prev)}
+                aria-label="Change language"
+                aria-haspopup="menu"
+                aria-expanded={isLangMenuOpen}
+              >
+                <span className="lang-menu-icon" aria-hidden="true">🌐</span>
+                <span>{languageOptions.find(({ code }) => code === lang)?.label}</span>
+              </button>
+              {isLangMenuOpen && (
+                <div className="lang-menu-dropdown" role="menu">
+                  {languageOptions.map(({ code, label }) => (
+                    <button
+                      key={code}
+                      className={`lang-menu-option${lang === code ? ' is-active' : ''}`}
+                      onClick={() => {
+                        setLanguage(code);
+                        setIsLangMenuOpen(false);
+                      }}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </nav>
         <div className="hero-content reveal reveal-1">
