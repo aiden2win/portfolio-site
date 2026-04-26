@@ -142,8 +142,12 @@ function App() {
 
         <section id="contact" className="section card contact reveal reveal-2">
           <h2>{t.contact.title}</h2>
-          <p>{t.contact.placeholder}</p>
-          <p className="contact-placeholder">{t.contact.note}</p>
+          <p>{t.contact.intro}</p>
+          <div className="contact-links">
+            <a href="mailto:highway0207@gmail.com"><strong>{t.contact.email}</strong><span>highway0207@gmail.com</span></a>
+            <a href="https://www.linkedin.com/in/eeeeedm/" target="_blank" rel="noopener noreferrer"><strong>{t.contact.linkedin}</strong><span>linkedin.com/in/eeeeedm</span></a>
+            <a href="https://github.com/aiden2win" target="_blank" rel="noopener noreferrer"><strong>{t.contact.github}</strong><span>github.com/aiden2win</span></a>
+          </div>
         </section>
       </main>
       <footer className="site-footer">

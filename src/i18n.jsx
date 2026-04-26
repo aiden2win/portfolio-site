@@ -44,8 +44,10 @@ const translations = {
     },
     contact: {
       title: '연락처',
-      placeholder: '연락처는 곧 업데이트됩니다.',
-      note: 'Email / LinkedIn / GitHub 링크가 여기에 추가될 예정입니다.',
+      intro: '편하게 연락 주세요.',
+      email: '이메일',
+      linkedin: '링크드인',
+      github: '깃허브',
     },
     footer: '이 사이트는 AI를 활용한 제품 개발 경험을 바탕으로 제작되었습니다.',
     featuredProjects: [
@@ -164,8 +166,10 @@ const translations = {
     },
     contact: {
       title: 'Contact',
-      placeholder: 'Contact details coming soon.',
-      note: 'Email / LinkedIn / GitHub links will be added here.',
+      intro: 'Feel free to reach out.',
+      email: 'Email',
+      linkedin: 'LinkedIn',
+      github: 'GitHub',
     },
     footer: 'Built with hands-on AI-assisted product development.',
     featuredProjects: [

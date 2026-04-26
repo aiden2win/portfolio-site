@@ -356,9 +356,35 @@ h2 {
   text-align: center;
 }
 
-.contact-placeholder {
+.contact-links {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.contact-links a {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #dbe5f0;
+  background: #ffffff;
+  color: #23435f;
+}
+
+.contact-links a:hover {
+  box-shadow: 0 10px 24px rgba(11, 34, 58, 0.08);
+  transform: translateY(-2px);
+}
+
+.contact-links strong {
+  font-size: 0.85rem;
+}
+
+.contact-links span {
   color: #577089;
-  margin-top: 4px;
+  word-break: break-all;
 }
 
 .reveal {
