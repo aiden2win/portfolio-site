@@ -32,7 +32,6 @@ function App() {
           <div className="nav-links">
             <a href="#about">{t.nav.about}</a>
             <a href="#projects">{t.nav.projects}</a>
-            <a href="#side-projects">{t.nav.sideProjects}</a>
             <a href="#strengths">{t.nav.strengths}</a>
             <a href="#contact">{t.nav.contact}</a>
             <div className="lang-menu">
@@ -124,31 +123,6 @@ function App() {
             ))}
           </div>
           <p className="suite-footer reveal reveal-1">{t.suiteFooter}</p>
-        </section>
-
-        <section id="side-projects" className="section">
-          <div className="section-head reveal reveal-1">
-            <h2>{t.sideProjects.title}</h2>
-            <p>{t.sideProjects.desc}</p>
-          </div>
-          <div className="project-grid">
-            {t.sideProjectsList.map((project, index) => (
-              <article key={project.title} className={`project-card reveal reveal-${(index % 3) + 1}`}>
-                <h3>{project.title}</h3>
-                <p className="project-subtitle">{project.subtitle}</p>
-                <ul>
-                  {project.details.map((detail) => (
-                    <li key={detail}>{detail}</li>
-                  ))}
-                </ul>
-                <div className="tags">
-                  {project.stack.map((tag) => (
-                    <span key={tag}>{tag}</span>
-                  ))}
-                </div>
-              </article>
-            ))}
-          </div>
         </section>
 
         <section id="strengths" className="section card">
