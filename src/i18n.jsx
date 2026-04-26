@@ -13,7 +13,7 @@ const translations = {
     hero: {
       eyebrow: '전략 기획 & 비즈니스 개발',
       heading: 'AI로 비즈니스 협업 툴을 직접 만드는 기획자, Aiden',
-      copy: '시장 분석부터 사업성 평가, 전략 실행 관리까지 — AI를 활용해 의사결정에 필요한 도구를 직접 설계하고 만듭니다. 복잡한 판단을 데이터로 풀어내는 실용적인 제품을 지향합니다.',
+      copy: '시장·경쟁 신호를 구조화하고, 그 인사이트를 바탕으로 사업 기회를 검토한 뒤, 실행 가능한 액션까지 연결하는 비즈니스 협업 툴을 직접 설계하고 만듭니다.',
       cta: '프로젝트 보기',
     },
     about: {
@@ -25,15 +25,15 @@ const translations = {
     },
     projects: {
       title: 'AI 기반 전략·사업개발 의사결정 지원 도구',
-      desc: '전략기획과 사업개발 업무에서 반복적으로 발생하는 시장 분석, 아이디어 평가, 실행 우선순위화 과정을 AI와 함께 경량 MVP 형태로 구조화한 프로젝트들입니다.',
-      descSuffix: '각 프로젝트는 독립적으로 동작하지만, 함께 보면 분석 → 평가 → 실행이라는 하나의 전략 의사결정 흐름을 구성합니다.',
+      desc: '전략기획과 사업개발 업무에서 반복적으로 발생하는 정보 수집, 기회 해석, 아이디어 검증, 실행 관리 과정을 AI 기반 MVP로 구조화한 프로젝트들입니다.',
+      descSuffix: '각 프로젝트는 독립적으로 동작하지만, 함께 보면 시장 신호를 읽고 → 사업 기회를 해석하고 → 우선순위를 검증한 뒤 → 실행으로 연결하는 하나의 의사결정 흐름을 구성합니다.',
     },
     flow: [
-      { step: '1단계', label: '시장·경쟁 신호 파악' },
-      { step: '2단계', label: '기회·아이디어 평가' },
-      { step: '3단계', label: '전략 액션 실행 관리' },
+      { step: '1단계', label: '시장·경쟁 신호 수집' },
+      { step: '2단계', label: '사업 기회·아이디어 검증' },
+      { step: '3단계', label: '우선순위 기반 실행 관리' },
     ],
-    suiteFooter: '세 프로젝트는 각각 독립적인 MVP이지만, 함께 보면 전략기획/사업개발 조직이 실제로 수행하는 분석, 평가, 실행 업무 흐름을 제품 관점으로 구조화한 도구 세트입니다.',
+    suiteFooter: '세 프로젝트는 각각 독립적인 MVP이지만, 함께 보면 전략기획/사업개발 조직이 실제로 수행하는 시장 탐색, 기회 판단, 실행 관리의 흐름을 제품 관점에서 연결한 도구 세트입니다.',
     sideProjects: {
       title: '사이드 프로젝트',
       desc: '기획부터 개발, 운영까지 직접 수행한 프로젝트입니다.',
@@ -55,9 +55,9 @@ const translations = {
         title: 'Market & Competitor Intelligence Dashboard',
         subtitle: '시장·경쟁사 인텔리전스 대시보드',
         details: [
-          '시장 및 경쟁사 업데이트를 구조화하고, 중요한 이벤트를 빠르게 파악',
-          '전략기획/사업개발 팀이 브리핑과 의사결정에 활용할 수 있는 인텔리전스 제공',
-          'AI 자동 분석으로 리서치 소요 시간 절감',
+          '시장 및 경쟁사 업데이트를 구조화해 중요한 신호를 빠르게 포착',
+          '전략기획/사업개발 팀이 어떤 기회를 볼지 판단할 수 있도록 인텔리전스 제공',
+          'AI 자동 분석으로 리서치와 브리핑 준비 시간을 절감',
         ],
         stack: ['시장 분석', '데이터 시각화', 'AI 인사이트'],
       },
@@ -65,9 +65,9 @@ const translations = {
         title: 'New Business Idea Evaluation Dashboard',
         subtitle: '신사업 아이디어 평가 대시보드',
         details: [
-          '신사업 및 신규 아이디어를 시장성, 전략 적합도, 경쟁 강도, 실행 가능성 기준으로 비교·평가',
-          '다차원 스코어링으로 객관적인 우선순위화 지원',
-          'AI 기반 Go/No-Go 리포트 자동 생성',
+          '신사업 및 신규 아이디어를 시장성, 전략 적합도, 경쟁 강도, 실행 가능성 기준으로 비교·검증',
+          '다차원 스코어링으로 왜 지금 이 기회를 봐야 하는지 우선순위화 지원',
+          'AI 기반 Go/No-Go 리포트로 다음 판단을 빠르게 정리',
         ],
         stack: ['사업 평가', '스코어링 프레임워크', 'AI 분석'],
       },
@@ -76,8 +76,8 @@ const translations = {
         subtitle: '전략 실행 추적 대시보드',
         details: [
           '시장 신호와 아이디어 검토 결과를 실제 전략 액션으로 연결',
-          '우선순위·리스크·다음 단계를 함께 관리',
-          '팀 정렬 확인 및 병목 구간 조기 발견',
+          '우선순위·리스크·다음 단계를 함께 관리하며 실행력을 높임',
+          '팀 정렬 상태를 확인하고 병목 구간을 조기에 발견',
         ],
         stack: ['전략 실행', '우선순위 관리', '리스크 추적'],
       },
@@ -135,7 +135,7 @@ const translations = {
     hero: {
       eyebrow: 'Strategy & Business Development',
       heading: 'Hi, I\'m Aiden — I build AI-powered strategic collaboration tools',
-      copy: 'Market analysis, business evaluation, strategy execution tracking — I design and ship AI-driven decision support tools that help teams plan smarter and move faster.',
+      copy: 'I design and ship AI-powered collaboration tools that turn market and competitor signals into evaluated business opportunities, then connect those decisions to clear execution.',
       cta: 'View Projects',
     },
     about: {
@@ -147,15 +147,15 @@ const translations = {
     },
     projects: {
       title: 'AI-powered Strategy & Business Development Decision Support Tools',
-      desc: 'A set of lightweight AI-assisted MVPs designed to structure recurring workflows in strategy planning and business development, including market analysis, idea evaluation, and action prioritization.',
-      descSuffix: 'Each product works independently, but together they form a connected decision-making flow: analyze → evaluate → act.',
+      desc: 'A set of lightweight AI-assisted MVPs that structure recurring strategy and business development workflows: signal gathering, opportunity interpretation, idea validation, and execution management.',
+      descSuffix: 'Each product works independently, but together they form one connected decision flow: read the market → interpret opportunities → validate priorities → execute.',
     },
     flow: [
-      { step: 'Step 1', label: 'Detect market and competitor signals' },
-      { step: 'Step 2', label: 'Evaluate opportunities and ideas' },
-      { step: 'Step 3', label: 'Turn decisions into strategic actions' },
+      { step: 'Step 1', label: 'Capture market and competitor signals' },
+      { step: 'Step 2', label: 'Validate business opportunities and ideas' },
+      { step: 'Step 3', label: 'Manage execution by priority' },
     ],
-    suiteFooter: 'While each project is an independent MVP, together they represent a productized toolkit for the core workflow of strategy and business development teams: analysis, evaluation, and execution.',
+    suiteFooter: 'While each project is an independent MVP, together they represent a productized toolkit for how strategy and business development teams actually work: exploring the market, judging opportunities, and driving execution.',
     sideProjects: {
       title: 'Side Projects',
       desc: 'End-to-end projects I planned, built, and operated from scratch.',
