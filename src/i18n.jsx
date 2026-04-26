@@ -12,7 +12,7 @@ const translations = {
     },
     hero: {
       eyebrow: '전략 기획 & 비즈니스 개발',
-      heading: 'AI로 비즈니스 협업 툴을 직접 만드는 기획자, Aiden',
+      heading: 'AI로 비즈니스 협업 툴 만드는 기획자, Aiden',
       copy: '시장·경쟁 신호를 구조화하고, 그 인사이트를 바탕으로 사업 기회를 검토한 뒤, 실행 가능한 액션까지 연결하는 비즈니스 협업 툴을 직접 설계하고 만듭니다.',
       cta: '프로젝트 보기',
     },
@@ -134,7 +134,7 @@ const translations = {
     },
     hero: {
       eyebrow: 'Strategy & Business Development',
-      heading: 'Hi, I\'m Aiden — I build AI-powered strategic collaboration tools',
+      heading: 'Hi, I\'m Aiden — I build AI-powered business collaboration tools',
       copy: 'I design and ship AI-powered collaboration tools that turn market and competitor signals into evaluated business opportunities, then connect those decisions to clear execution.',
       cta: 'View Projects',
     },
